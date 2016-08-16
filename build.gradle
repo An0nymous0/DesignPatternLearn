@@ -1,14 +1,16 @@
 group 'DesignPatternLearn'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
 
-sourceCompatibility = 1.8
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+    compileJava.options.encoding = 'UTF-8'
 
-repositories {
-    mavenCentral()
-}
+    sourceCompatibility = 1.8
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    repositories {
+        mavenCentral()
+    }
 }

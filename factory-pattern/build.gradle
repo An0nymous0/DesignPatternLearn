@@ -1,0 +1,3 @@
+group 'DesignPatternLearn'
+version '1.0-SNAPSHOT'
+description = '工厂模式'

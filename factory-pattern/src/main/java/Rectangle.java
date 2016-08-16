@@ -1,5 +1,3 @@
-package factorypattern;
-
 /**
  * Created by An0nymous on 16/8/16.
  */

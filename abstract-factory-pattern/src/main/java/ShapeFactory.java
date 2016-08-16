@@ -1,10 +1,10 @@
-package factorypattern;
 
 /**
  * Created by An0nymous on 16/8/16.
  */
-public class ShapeFactory {
-    //使用 getShape 方法获取形状类型的对象
+public class ShapeFactory extends AbstractFactory {
+
+    @Override
     public Shape getShape(String shapeType){
         if(shapeType == null){
             return null;
@@ -16,6 +16,11 @@ public class ShapeFactory {
         } else if(shapeType.equalsIgnoreCase("SQUARE")){
             return new Square();
         }
+        return null;
+    }
+
+    @Override
+    Color getColor(String color) {
         return null;
     }
 }

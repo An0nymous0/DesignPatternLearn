@@ -1,0 +1,6 @@
+group 'DesignPatternLearn'
+version '1.0-SNAPSHOT'
+description = '抽象工厂模式'
+dependencies{
+    compile project(":factory-pattern")
+}
